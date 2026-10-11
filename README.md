@@ -1,6 +1,6 @@
 # 🎨 G-Creativa Pixel Studio
 
-![Texto alternativo](CAPTURA.png)
+![Texto alternativo](Captura.PNG)
 
 Un editor de Pixel Art ligero, rápido y de código abierto desarrollado completamente en Python por [gcreativaa](https://github.com/gcreativaa). 
 

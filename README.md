@@ -1,5 +1,7 @@
 # 🎨 G-Creativa Pixel Studio
 
+![Texto alternativo](CAPTURA.png)
+
 Un editor de Pixel Art ligero, rápido y de código abierto desarrollado completamente en Python por [gcreativaa](https://github.com/gcreativaa). 
 
 Este proyecto nació de la necesidad de tener una herramienta de dibujo de píxeles sin distracciones, diseñada específicamente para creadores de assets 2D, desarrolladores de videojuegos indie y artistas digitales que necesitan exportar hojas de sprites o íconos de forma ágil y limpia.

@@ -1,45 +1,55 @@
-# 🎨 G-Creativa Pixel Studio
+# ✍️ G-Creativa Math Canvas Editor
 
 ![Texto alternativo](Captura.PNG)
 
-Un editor de Pixel Art ligero, rápido y de código abierto desarrollado completamente en Python por [gcreativaa](https://github.com/gcreativaa). 
 
-Este proyecto nació de la necesidad de tener una herramienta de dibujo de píxeles sin distracciones, diseñada específicamente para creadores de assets 2D, desarrolladores de videojuegos indie y artistas digitales que necesitan exportar hojas de sprites o íconos de forma ágil y limpia.
+Una pizarra digital de alta fidelidad desarrollada en Python por [gcreativaa](https://github.com/gcreativaa), diseñada específicamente para matemáticos, físicos y artistas técnicos. Permite escribir ecuaciones complejas a mano y exportarlas a formatos rasterizados o vectores matemáticos puros para publicaciones científicas.
 
-## ✨ Características Principales
+## 🧬 Capacidades del Software
 
-*   **Lienzo de Cuadrícula Activa:** Soporte nativo para resoluciones clásicas (16x16, 32x32).
-*   **Controles Intuitivos:** Clic izquierdo para pintar, clic derecho para borrar (modo goma de borrar integrado).
-*   **Selector de Paleta Hexadecimal:** Sistema de selección de colores exactos.
-*   **Motor de Exportación Lossless:** Genera archivos `.png` puros (1:1 píxel a píxel) utilizando `Pillow`, listos para ser importados en motores como Unity, Godot o GameMaker sin perder nitidez.
+*   **Lienzo Fluido (Anti-aliased):** Renderizado de trazos suaves mediante interpolación de coordenadas para simular escritura real.
+*   **Exportación Vectorial Científica (EPS):** Exporta tus fórmulas directamente a un formato vectorial (Encapsulated PostScript). A diferencia de los JPG/PNG, este archivo no tiene píxeles, lo que permite escalarlo a tamaños infinitos sin perder calidad. Es el formato estándar soportado nativamente por compiladores **LaTeX**.
+*   **Doble Renderizado en Memoria:** El software dibuja simultáneamente en la interfaz de usuario (Tkinter) y en un buffer de memoria de alta resolución (Pillow) para garantizar exportaciones PNG/JPG nítidas.
+*   **Arquitectura IA-Ready:** Estructura modular preparada para integrar APIs de reconocimiento óptico de caracteres (OCR) para conversión directa a código `.tex`.
 
-## 🛠️ Requisitos e Instalación
+## ⚙️ Instalación y Uso
 
-El editor está construido con la biblioteca nativa `tkinter`, por lo que solo necesitas instalar `Pillow` para el motor de renderizado y exportación.
+Desarrollado en Python 3.14.00. Requiere la biblioteca gráfica `Pillow`.
 
-1. Clona el repositorio en tu máquina:
+1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/gcreativaa/pixel-art-editor.git](https://github.com/gcreativaa/pixel-art-editor.git)
+   git clone [https://github.com/gcreativaa/math-canvas-editor.git](https://github.com/gcreativaa/math-canvas-editor.git)
 
-   Entra al directorio del proyecto:
+   Accede a la carpeta:
 
 Bash
-cd pixel-art-editor
-Instala la dependencia gráfica:
+cd math-canvas-editor
+Instala los requerimientos de procesamiento de imagen:
 
 Bash
 pip install Pillow
-Ejecuta el estudio:
+Ejecuta el lienzo digital:
 
 Bash
-python pixel_editor.py
-💖 Apoya a la Creadora
-Si esta herramienta ha agilizado tu flujo de trabajo o te ha ayudado en tus proyectos de desarrollo de videojuegos, considera apoyar mi trabajo creativo y de desarrollo.
+python math_canvas.py
+📐 Cómo usar en tus documentos LaTeX
+Dibuja tu ecuación.
 
-☕ Invítame un café o dona a través de PayPal:
+Haz clic en Guardar Vector (EPS/SVG).
+
+En tu documento LaTeX, inclúyelo fácilmente manteniendo la calidad absoluta:
+
+Fragmento de código
+\usepackage{graphicx}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{tu_ecuacion.eps}
+\end{figure}
+💖 Patrocina el Desarrollo
+Esta herramienta es gratuita y de código abierto. Si la utilizas para ilustrar tus papers científicos, apuntes universitarios o proyectos de desarrollo, considera invitarme un café. Tu apoyo financia la investigación y creación de nuevas herramientas.
+
+☕ Donaciones directas vía PayPal:
 
 👉 herrerabarragan.guadalupe@gmail.com
 
-Tu apoyo me permite seguir creando herramientas de código abierto, assets gráficos y proyectos de ciencia y tecnología.
-
-Diseñado con pasión por gcreativaa | Creadora Visual & Desarrolladora
+Ingeniería visual y lógica por gcreativaa.
